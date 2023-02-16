@@ -1,13 +1,13 @@
 const pullDownButton = document.getElementById("lists")
 
 pullDownButton.addEventListener('mouseover', function(){
-    console.log(lists);
+    pullDownButton.setAttribute("style", "background-color:blue;")
 })
 
 pullDownButton.addEventListener('mouseout', function(){
-    console.log(lists)
+    pullDownButton.removeAttribute("style", "background-color:red;")
 })
 
 pullDownButton.addEventListener('click', function(){
-    console.log(lists)
+    pullDownButton.setAttribute("style", "background-color:green;")
 })
